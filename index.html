@@ -1,86 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Social media dashboard with theme switcher</title>
 
   <style>
 
   </style>
 </head>
-<body>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+<body class="page">
+  <header class="page__header">
+    <div class="wrapper wrapper--header">
 
-  Dark Mode
+      <div class="text-group">
+        <h1 class="title title__header">
+          Social Media Dashboard
+        </h1>
+        <p class="copy copy__header -desaturatedBlue">
+          Total Followers: 23,004
+        </p>
+      </div>
 
-  
+      <div class="m-toggleSelect">
+        <p class="a-selectionItem -desaturatedBlue">
+          Dark Mode
+        </p>
+        <div class="m-toggleSlider">
+          <label for="checkbox" class="m-toggleSwitch">
+            <input type="checkbox" id="checkbox" class="a-toggle">
+            <span class="a-toggleBox -round">
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="page__content">
+    <div class="wrapper wrapper--content">
+      <article class="socialInfo">
+        <div class="m-socialMedia -facebook">
+          <div class="m-social">
+            <img src="/img/icon-facebook.svg" alt="facebook icon" class="img a-socialImg a-facebook">
+            <a href="" class="link a-socialLink -desaturatedBlue">@nathanf</a>
+          </div>
+          <div class="m-followCount">
+            <p class="copy a-counter">
+              1987
+            </p>
+            <p class="copy a-subText -desaturatedBlue">
+              Followers
+            </p>
+          </div>
+          <div class="m-followDayState">
+            <img src="/img/icon-up.svg" alt="up icon" class="img a-state">
+            <p class="copy a-dayState -green">
+              12 Today
+            </p>
+          </div>
+        </div>
+        <div class="m-socialMedia -twitter">
+          <div class="m-social">
+            <img src="/img/icon-twitter.svg" alt="twitter icon" class="img a-socialImg a-twitter">
+            <a href="" class="link a-socialLink -desaturatedBlue">@nathanf</a>
+          </div>
+          <div class="m-followCount">
+            <p class="copy a-counter">
+              1044
+            </p>
+            <p class="copy a-subText -desaturatedBlue">
+              Followers
+            </p>
+          </div>
+          <div class="m-followDayState">
+            <img src="/img/icon-up.svg" alt="up icon" class="img a-state">
+            <p class="copy a-dayState -green">
+              99 Today
+            </p>
+          </div>
+        </div>
+          <div class="m-socialMedia -instagram">
+            <div class="m-social">
+              <img src="/img/icon-instagram.svg" alt="instagram icon" class="img a-socialImg a-instagram">
+              <a href="" class="link a-socialLink -desaturatedBlue">@realnathanf</a>
+            </div>
+            <div class="m-followCount">
+              <p class="copy a-counter">
+                11k
+              </p>
+              <p class="copy a-subText -desaturatedBlue">
+                Followers
+              </p>
+            </div>
+            <div class="m-followDayState">
+              <img src="/img/icon-up.svg" alt="up icon" class="img a-state">
+              <p class="copy a-dayState -green">
+                1099 Today
+              </p>
+            </div>
+          </div>
+          <div class="m-socialMedia -youtube darkTheme">
+            <div class="m-social">
+              <img src="/img/icon-youtube.svg" alt="youtube icon" class="img a-socialImg a-youtube">
+              <a href="" class="link a-socialLink -desaturatedBlue">Nathan F.</a>
+            </div>
+            <div class="m-followCount">
+              <p class="copy a-counter">
+                8239
+              </p>
+              <p class="copy a-subText -desaturatedBlue">
+                Subscribers
+              </p>
+            </div>
+            <div class="m-followDayState">
+              <img src="/img/icon-down.svg" alt="down icon" class="img a-state">
+              <p class="copy a-dayState -red">
+                144 Today
+              </p>
+            </div>
+          </div>
+      </article>
+      <article class="overview">
+        <h2 class="title title__overview">
+          Overview - Today
+        </h2>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="link">Frontend Mentor</a>. 
-    Coded by <a href="#" class="link">AX-d</a>.
-  </div>
+        <div class="m-mediaStats">
+          <p class="copy a-stateName -desaturatedBlue">
+            Page Views
+          </p>
+          <img src="/img/icon-facebook.svg" alt="facebook icon" class="img a-socialImg a-facebook">
+          <p class="copy a-statNumber">
+            87
+          </p>
+          <div class="m-followDayState -overview">
+            <img src="/img/icon-up.svg" alt="up icon" class="img a-state">
+            <p class="copy a-dayState -green -overview">
+              3%
+            </p>
+          </div>
+        </div>
+        <div class="m-mediaStats">
+          <p class="copy a-stateName -desaturatedBlue">
+            Likes
+          </p>
+          <img src="/img/icon-facebook.svg" alt="facebook icon" class="img a-socialImg a-facebook">
+          <p class="copy a-statNumber">
+            52
+          </p>
+          <div class="m-followDayState -overview">
+            <img src="/img/icon-down.svg" alt="downp icon" class="img a-state">
+            <p class="copy a-dayState -red -overview">
+              2%
+            </p>
+          </div>
+        </div>
+        <div class="m-mediaStats">
+          <p class="copy a-stateName -desaturatedBlue">
+            Likes
+          </p>
+          <img src="/img/icon-instagram.svg" alt="instagram icon" class="img a-socialImg a-instagram">
+          <p class="copy a-statNumber">
+            5462
+          </p>
+          <div class="m-followDayState -overview">
+            <img src="/img/icon-up.svg" alt="up icon" class="img a-state">
+            <p class="copy a-dayState -green -overview">
+              2257%
+            </p>
+          </div>
+        </div>
+        <div class="m-mediaStats">
+          <p class="copy a-stateName -desaturatedBlue">
+            Profile Views
+          </p>
+          <img src="/img/icon-instagram.svg" alt="instagram icon" class="img a-socialImg a-instagram">
+          <p class="copy a-statNumber">
+            52k
+          </p>
+          <div class="m-followDayState -overview">
+            <img src="/img/icon-up.svg" alt="up icon" class="img a-state">
+            <p class="copy a-dayState -green -overview">
+              1375%
+            </p>
+          </div>
+        </div>
+        <div class="m-mediaStats">
+          <p class="copy a-stateName -desaturatedBlue">
+            Retweets
+          </p>
+          <img src="/img/icon-twitter.svg" alt="twitter icon" class="img a-socialImg a-twitter">
+          <p class="copy a-statNumber">
+            117
+          </p>
+          <div class="m-followDayState -overview">
+            <img src="/img/icon-up.svg" alt="up icon" class="img a-state">
+            <p class="copy a-dayState -green -overview">
+              303%
+            </p>
+          </div>
+        </div>
+        <div class="m-mediaStats">
+          <p class="copy a-stateName -desaturatedBlue">
+            Likes
+          </p>
+          <img src="/img/icon-twitter.svg" alt="twitter icon" class="img a-socialImg a-twitter">
+          <p class="copy a-statNumber">
+            507
+          </p>
+          <div class="m-followDayState -overview">
+            <img src="/img/icon-up.svg" alt="up icon" class="img a-state">
+            <p class="copy a-dayState -green -overview">
+              553%
+            </p>
+          </div>
+        </div>
+        <div class="m-mediaStats">
+          <p class="copy a-stateName -desaturatedBlue">
+            Likes
+          </p>
+          <img src="/img/icon-youtube.svg" alt="youtube icon" class="img a-socialImg a-youtube">
+          <p class="copy a-statNumber">
+            107
+          </p>
+          <div class="m-followDayState -overview">
+            <img src="/img/icon-down.svg" alt="down icon" class="img a-state">
+            <p class="copy a-dayState -red -overview">
+              19%
+            </p>
+          </div>
+        </div>
+        <div class="m-mediaStats">
+          <p class="copy a-stateName -desaturatedBlue">
+            Total Views
+          </p>
+          <img src="/img/icon-youtube.svg" alt="youtube icon" class="img a-socialImg a-youtube">
+          <p class="copy a-statNumber">
+            1407
+          </p>
+          <div class="m-followDayState -overview">
+            <img src="/img/icon-down.svg" alt="down icon" class="img a-state">
+            <p class="copy a-dayState -red -overview">
+              12%
+            </p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+  <footer class="page__footer">
+    <div class="wrapper wrapper--footer">
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="link">Frontend
+          Mentor</a>.
+        Coded by <a href="#" class="link">AX-d</a>.
+      </div>
+    </div>
+  </footer>
   <script src="js/main.js"></script>
 </body>
+
 </html>
